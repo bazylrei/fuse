@@ -1,0 +1,6 @@
+framework module Pods_FuseTests {
+  umbrella header "Pods-FuseTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

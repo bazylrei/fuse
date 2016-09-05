@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B465205C58FE22969CDB9A5 /* Pods_Fuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B9B8043FF1FAE4BD9B39FF /* Pods_Fuse.framework */; };
+		9E3ECBD129012BA48998249D /* Pods_FuseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F7BD9E8156C5497310D897 /* Pods_FuseTests.framework */; };
 		F8AA3F6E1D7E003E002463C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F6D1D7E003E002463C5 /* AppDelegate.swift */; };
 		F8AA3F701D7E003E002463C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F6F1D7E003E002463C5 /* ViewController.swift */; };
 		F8AA3F731D7E003E002463C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AA3F711D7E003E002463C5 /* Main.storyboard */; };
@@ -27,6 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271216CF903F711BD5FFE951 /* Pods-Fuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuse/Pods-Fuse.debug.xcconfig"; sourceTree = "<group>"; };
+		705587C756FBB40C38F66CA8 /* Pods-Fuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuse/Pods-Fuse.release.xcconfig"; sourceTree = "<group>"; };
+		A4F7BD9E8156C5497310D897 /* Pods_FuseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4711CB4C5019B9783105790 /* Pods-FuseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuseTests/Pods-FuseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C69A55C07EAD717E58889F15 /* Pods-FuseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuseTests/Pods-FuseTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5B9B8043FF1FAE4BD9B39FF /* Pods_Fuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AA3F6A1D7E003E002463C5 /* Fuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AA3F6D1D7E003E002463C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8AA3F6F1D7E003E002463C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B465205C58FE22969CDB9A5 /* Pods_Fuse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3ECBD129012BA48998249D /* Pods_FuseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C7F79639BBAAFA2CF100CA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B9B8043FF1FAE4BD9B39FF /* Pods_Fuse.framework */,
+				A4F7BD9E8156C5497310D897 /* Pods_FuseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E343BB22B4CF1FE851C312D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				271216CF903F711BD5FFE951 /* Pods-Fuse.debug.xcconfig */,
+				705587C756FBB40C38F66CA8 /* Pods-Fuse.release.xcconfig */,
+				C4711CB4C5019B9783105790 /* Pods-FuseTests.debug.xcconfig */,
+				C69A55C07EAD717E58889F15 /* Pods-FuseTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8AA3F611D7E003E002463C5 = {
 			isa = PBXGroup;
 			children = (
 				F8AA3F6C1D7E003E002463C5 /* Fuse */,
 				F8AA3F841D7E003E002463C5 /* FuseTests */,
 				F8AA3F6B1D7E003E002463C5 /* Products */,
+				E343BB22B4CF1FE851C312D4 /* Pods */,
+				9C7F79639BBAAFA2CF100CA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8AA3F8A1D7E003E002463C5 /* Build configuration list for PBXNativeTarget "Fuse" */;
 			buildPhases = (
+				406EEB6CDAED9EC98EF68E68 /* [CP] Check Pods Manifest.lock */,
 				F8AA3F661D7E003E002463C5 /* Sources */,
 				F8AA3F671D7E003E002463C5 /* Frameworks */,
 				F8AA3F681D7E003E002463C5 /* Resources */,
+				94D2428812D80389F9F5A024 /* [CP] Embed Pods Frameworks */,
+				816A5B0A2FE27DD810A7F123 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8AA3F8D1D7E003E002463C5 /* Build configuration list for PBXNativeTarget "FuseTests" */;
 			buildPhases = (
+				6B872EB90FEE113E65CBC209 /* [CP] Check Pods Manifest.lock */,
 				F8AA3F7D1D7E003E002463C5 /* Sources */,
 				F8AA3F7E1D7E003E002463C5 /* Frameworks */,
 				F8AA3F7F1D7E003E002463C5 /* Resources */,
+				9772F9D88AAA6DE2D130EEEC /* [CP] Embed Pods Frameworks */,
+				88DF107E328DF1A0AC3B1389 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +232,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		406EEB6CDAED9EC98EF68E68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B872EB90FEE113E65CBC209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		816A5B0A2FE27DD810A7F123 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuse/Pods-Fuse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88DF107E328DF1A0AC3B1389 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuseTests/Pods-FuseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94D2428812D80389F9F5A024 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuse/Pods-Fuse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9772F9D88AAA6DE2D130EEEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuseTests/Pods-FuseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8AA3F661D7E003E002463C5 /* Sources */ = {
@@ -331,6 +462,7 @@
 		};
 		F8AA3F8B1D7E003E002463C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271216CF903F711BD5FFE951 /* Pods-Fuse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fuse/Info.plist;
@@ -342,6 +474,7 @@
 		};
 		F8AA3F8C1D7E003E002463C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 705587C756FBB40C38F66CA8 /* Pods-Fuse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fuse/Info.plist;
@@ -353,6 +486,7 @@
 		};
 		F8AA3F8E1D7E003E002463C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4711CB4C5019B9783105790 /* Pods-FuseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FuseTests/Info.plist;
@@ -365,6 +499,7 @@
 		};
 		F8AA3F8F1D7E003E002463C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69A55C07EAD717E58889F15 /* Pods-FuseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FuseTests/Info.plist;
@@ -394,6 +529,7 @@
 				F8AA3F8C1D7E003E002463C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8AA3F8D1D7E003E002463C5 /* Build configuration list for PBXNativeTarget "FuseTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +538,7 @@
 				F8AA3F8F1D7E003E002463C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
