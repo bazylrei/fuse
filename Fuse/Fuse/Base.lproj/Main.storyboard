@@ -30,6 +30,9 @@
                             <constraint firstItem="IBr-S2-NCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJB-47-ahP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textfieldCompany" destination="IBr-S2-NCu" id="BS6-NT-4QF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
