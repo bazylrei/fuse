@@ -16,6 +16,8 @@
 		F8AA3F781D7E003E002463C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AA3F771D7E003E002463C5 /* Assets.xcassets */; };
 		F8AA3F7B1D7E003E002463C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AA3F791D7E003E002463C5 /* LaunchScreen.storyboard */; };
 		F8AA3F861D7E003E002463C5 /* FuseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F851D7E003E002463C5 /* FuseTests.swift */; };
+		F8AA3F921D7E018D002463C5 /* CompanyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F911D7E018D002463C5 /* CompanyAPI.swift */; };
+		F8AA3F951D7E01C7002463C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F941D7E01C7002463C5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		F8AA3F811D7E003E002463C5 /* FuseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AA3F851D7E003E002463C5 /* FuseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuseTests.swift; sourceTree = "<group>"; };
 		F8AA3F871D7E003E002463C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AA3F911D7E018D002463C5 /* CompanyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyAPI.swift; sourceTree = "<group>"; };
+		F8AA3F941D7E01C7002463C5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		F8AA3F6C1D7E003E002463C5 /* Fuse */ = {
 			isa = PBXGroup;
 			children = (
+				F8AA3F931D7E01B3002463C5 /* Utils */,
+				F8AA3F901D7E016F002463C5 /* API */,
 				F8AA3F6D1D7E003E002463C5 /* AppDelegate.swift */,
 				F8AA3F6F1D7E003E002463C5 /* ViewController.swift */,
 				F8AA3F711D7E003E002463C5 /* Main.storyboard */,
@@ -129,6 +135,22 @@
 				F8AA3F871D7E003E002463C5 /* Info.plist */,
 			);
 			path = FuseTests;
+			sourceTree = "<group>";
+		};
+		F8AA3F901D7E016F002463C5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F8AA3F911D7E018D002463C5 /* CompanyAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F8AA3F931D7E01B3002463C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F8AA3F941D7E01C7002463C5 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AA3F951D7E01C7002463C5 /* Constants.swift in Sources */,
+				F8AA3F921D7E018D002463C5 /* CompanyAPI.swift in Sources */,
 				F8AA3F701D7E003E002463C5 /* ViewController.swift in Sources */,
 				F8AA3F6E1D7E003E002463C5 /* AppDelegate.swift in Sources */,
 				F8AA3F761D7E003E002463C5 /* Fuse.xcdatamodeld in Sources */,
