@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Company" representedClassName=".Company" syncable="YES">
+        <attribute name="custom_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="password_changing" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Password" inverseName="company" inverseEntity="Password" syncable="YES"/>
+    </entity>
+    <entity name="Password" representedClassName=".Password" syncable="YES">
+        <attribute name="enabled" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="secure_field" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="password_changing" inverseEntity="Company" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Company" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="Password" positionX="-36" positionY="45" width="128" height="90"/>
+    </elements>
+</model>

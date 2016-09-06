@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0B465205C58FE22969CDB9A5 /* Pods_Fuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B9B8043FF1FAE4BD9B39FF /* Pods_Fuse.framework */; };
+		21AA39181D7E3E9500A02943 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA39141D7E3E9500A02943 /* Company+CoreDataProperties.swift */; };
+		21AA39191D7E3E9500A02943 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA39151D7E3E9500A02943 /* Company.swift */; };
+		21AA391A1D7E3E9500A02943 /* Password+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA39161D7E3E9500A02943 /* Password+CoreDataProperties.swift */; };
+		21AA391B1D7E3E9500A02943 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA39171D7E3E9500A02943 /* Password.swift */; };
+		21D33AB81D7E3ABC001B277A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21D33AB61D7E3ABC001B277A /* Model.xcdatamodeld */; };
 		9E3ECBD129012BA48998249D /* Pods_FuseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F7BD9E8156C5497310D897 /* Pods_FuseTests.framework */; };
 		F8AA3F6E1D7E003E002463C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F6D1D7E003E002463C5 /* AppDelegate.swift */; };
 		F8AA3F701D7E003E002463C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F6F1D7E003E002463C5 /* ViewController.swift */; };
 		F8AA3F731D7E003E002463C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AA3F711D7E003E002463C5 /* Main.storyboard */; };
-		F8AA3F761D7E003E002463C5 /* Fuse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F741D7E003E002463C5 /* Fuse.xcdatamodeld */; };
 		F8AA3F781D7E003E002463C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AA3F771D7E003E002463C5 /* Assets.xcassets */; };
 		F8AA3F7B1D7E003E002463C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AA3F791D7E003E002463C5 /* LaunchScreen.storyboard */; };
 		F8AA3F861D7E003E002463C5 /* FuseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA3F851D7E003E002463C5 /* FuseTests.swift */; };
@@ -31,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21AA39141D7E3E9500A02943 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		21AA39151D7E3E9500A02943 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		21AA39161D7E3E9500A02943 /* Password+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Password+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		21AA39171D7E3E9500A02943 /* Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		21D33AB71D7E3ABC001B277A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		271216CF903F711BD5FFE951 /* Pods-Fuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuse/Pods-Fuse.debug.xcconfig"; sourceTree = "<group>"; };
 		705587C756FBB40C38F66CA8 /* Pods-Fuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuse/Pods-Fuse.release.xcconfig"; sourceTree = "<group>"; };
 		A4F7BD9E8156C5497310D897 /* Pods_FuseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +50,6 @@
 		F8AA3F6D1D7E003E002463C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8AA3F6F1D7E003E002463C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8AA3F721D7E003E002463C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F8AA3F751D7E003E002463C5 /* Fuse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fuse.xcdatamodel; sourceTree = "<group>"; };
 		F8AA3F771D7E003E002463C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8AA3F7A1D7E003E002463C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8AA3F7C1D7E003E002463C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +80,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21D33AB51D7E3AA4001B277A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21D33AB61D7E3ABC001B277A /* Model.xcdatamodeld */,
+				21AA39141D7E3E9500A02943 /* Company+CoreDataProperties.swift */,
+				21AA39151D7E3E9500A02943 /* Company.swift */,
+				21AA39161D7E3E9500A02943 /* Password+CoreDataProperties.swift */,
+				21AA39171D7E3E9500A02943 /* Password.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9C7F79639BBAAFA2CF100CA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +135,7 @@
 		F8AA3F6C1D7E003E002463C5 /* Fuse */ = {
 			isa = PBXGroup;
 			children = (
+				21D33AB51D7E3AA4001B277A /* Model */,
 				F8AA3F931D7E01B3002463C5 /* Utils */,
 				F8AA3F901D7E016F002463C5 /* API */,
 				F8AA3F6D1D7E003E002463C5 /* AppDelegate.swift */,
@@ -123,7 +144,6 @@
 				F8AA3F771D7E003E002463C5 /* Assets.xcassets */,
 				F8AA3F791D7E003E002463C5 /* LaunchScreen.storyboard */,
 				F8AA3F7C1D7E003E002463C5 /* Info.plist */,
-				F8AA3F741D7E003E002463C5 /* Fuse.xcdatamodeld */,
 			);
 			path = Fuse;
 			sourceTree = "<group>";
@@ -353,11 +373,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AA391B1D7E3E9500A02943 /* Password.swift in Sources */,
 				F8AA3F951D7E01C7002463C5 /* Constants.swift in Sources */,
 				F8AA3F921D7E018D002463C5 /* CompanyAPI.swift in Sources */,
+				21AA39181D7E3E9500A02943 /* Company+CoreDataProperties.swift in Sources */,
 				F8AA3F701D7E003E002463C5 /* ViewController.swift in Sources */,
+				21AA39191D7E3E9500A02943 /* Company.swift in Sources */,
 				F8AA3F6E1D7E003E002463C5 /* AppDelegate.swift in Sources */,
-				F8AA3F761D7E003E002463C5 /* Fuse.xcdatamodeld in Sources */,
+				21AA391A1D7E3E9500A02943 /* Password+CoreDataProperties.swift in Sources */,
+				21D33AB81D7E3ABC001B277A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,13 +591,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F8AA3F741D7E003E002463C5 /* Fuse.xcdatamodeld */ = {
+		21D33AB61D7E3ABC001B277A /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F8AA3F751D7E003E002463C5 /* Fuse.xcdatamodel */,
+				21D33AB71D7E3ABC001B277A /* Model.xcdatamodel */,
 			);
-			currentVersion = F8AA3F751D7E003E002463C5 /* Fuse.xcdatamodel */;
-			path = Fuse.xcdatamodeld;
+			currentVersion = 21D33AB71D7E3ABC001B277A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

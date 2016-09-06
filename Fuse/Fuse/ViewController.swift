@@ -28,7 +28,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     text = text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
     if text.characters.count > 1 {
       CompanyAPI.getCompanyRequest(textField.text!) { (result, error) in
-        print(result)
+        dispatch_async(dispatch_get_main_queue(), { [weak self] in
+          if error != nil {
+            self?.textfieldCompany.backgroundColor = UIColor.redColor()
+          } else {
+            self?.textfieldCompany.backgroundColor = UIColor.greenColor()
+          }
+        })
       }
     }
     
