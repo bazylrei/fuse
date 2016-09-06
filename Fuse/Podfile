@@ -7,6 +7,7 @@ target 'Fuse' do
   pod 'Alamofire'
   pod "MagicalRecord"
   pod 'SDWebImage'
+  pod 'ReachabilitySwift'
   # Pods for Fuse
 
   target 'FuseTests' do

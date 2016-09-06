@@ -25,6 +25,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                 <connections>
                                     <action selector="textFieldDidEnter:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Jzj-O8-XFw"/>
+                                    <action selector="textFieldDidEnter:" destination="BYZ-38-t0r" eventType="editingChanged" id="MDP-B7-b0m"/>
                                 </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-eu-YTb">
