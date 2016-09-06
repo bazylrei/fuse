@@ -6,6 +6,7 @@ target 'Fuse' do
   use_frameworks!
   pod 'Alamofire'
   pod "MagicalRecord"
+  pod 'SDWebImage'
   # Pods for Fuse
 
   target 'FuseTests' do

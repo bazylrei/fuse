@@ -21,11 +21,9 @@ class CompanyAPI: NSObject {
           if response.response?.statusCode == 200{
             guard let JSON = response.result.value else { return }
             print(JSON)
-            var company: Company?
-            MagicalRecord.saveWithBlock({ (localContext) in
-              company = Company.MR_importFromObject(JSON, inContext: localContext)
-              }, completion: { (success, error) in
-                completion(result: company, error: nil)
+            MagicalRecord.saveWithBlockAndWait({ (localContext) in
+              let company = Company.MR_importFromObject(JSON, inContext: localContext)
+              completion(result: company, error: nil)
             })
           } else {
               completion(result: nil, error: "Company not found")
